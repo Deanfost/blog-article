@@ -1,2 +1,2 @@
-# page-collection
-A collection of static webpages for practice. 
+# blog-article
+A responsive static webpage built in pure HTML and CSS. 
