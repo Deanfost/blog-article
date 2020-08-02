@@ -1,6 +1,8 @@
 :root {
     --max-content-width: 1530px;
     --nav-height: 100px;
+    --logo-dimens: 40px;
+    --hori-container-padding: 25px;
 }
 
 * {
@@ -16,22 +18,24 @@
 .container {
     max-width: var(--max-content-width);
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 var(--hori-container-padding);
 }
 
 header {
     background-color: var(--dark-white-bg);
 }
 
+/* Navigation bar */
+
 nav {
     height: var(--nav-height);
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -47,19 +51,19 @@ nav li {
 }
 
 .logo-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
 }
 
 .logo-container img {
-    width: 40px;
-    height: 40px;
+    width: var(--logo-dimens);
+    height: var(--logo-dimens);
     margin-right: 18px;
 }
 
 .search-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -92,9 +96,41 @@ nav li {
     flex-grow: 2;
 }
 
-@media (min-width: 880px) {
-    .container {
-        grid-template-columns: 2;
-        grid-template-rows: 2;
+.nav-menu {
+    width: var(--logo-dimens);
+    height: var(--logo-dimens);
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    display: none;
+    padding-bottom: 30px;
+    background-color: var(--dark-white-bg)
+}
+
+@media screen and (max-width: 880px) {
+    nav > ul, nav > .search-container {
+        display: none;
+    }
+    
+    nav li {
+        line-height: initial;
+        margin-top: 20px;
+    }
+
+    .nav-menu {
+        display: initial;
+    }
+
+    .mobile-nav {
+        /* display: flex; */
     }
 }
