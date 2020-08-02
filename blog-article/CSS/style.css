@@ -1,5 +1,5 @@
 :root {
-    --max-content-width: 1480px;
+    --max-content-width: 1530px;
     --nav-height: 100px;
 }
 
@@ -16,6 +16,7 @@
 .container {
     max-width: var(--max-content-width);
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 header {
@@ -66,8 +67,27 @@ nav li {
 
 .search-box {
     width: 220px;
-    height: 30px;
+    height: 36px;
+    padding: 0 15px;
     background-color: transparent;
     border: thin solid var(--grey-light-tertiary);
     border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-box img {
+    width: 16px;
+    height: 16px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.search-box input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    flex-grow: 2;
 }
