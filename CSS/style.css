@@ -1,5 +1,5 @@
 :root {
-    --max-content-width: 1530px;
+    --max-content-width: 1150px;
     --nav-height: 100px;
     --logo-dimens: 40px;
     --hori-container-padding: 25px;
@@ -9,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
     text-decoration: none;
     list-style: none;
     line-height: unset;
@@ -18,7 +17,7 @@
 .container {
     max-width: var(--max-content-width);
     margin: 0 auto;
-    padding: 0 var(--hori-container-padding);
+    padding: 25px var(--hori-container-padding);
 }
 
 header {
@@ -132,5 +131,43 @@ nav li {
 
     .mobile-nav {
         /* display: flex; */
+    }
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+    background-image: url('/Images/article-image.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.title-container {
+    text-align: center;
+    padding: 0 20%;
+}
+
+.title-container .heading {
+    margin-bottom: 10px;
+}
+
+.jumbotron > p {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+    .title-container {
+        padding: 0 15px;
     }
 }
