@@ -21,11 +21,11 @@
                 <p class="site-title">DashBlog</p>
             </div>
             <ul>
-                <li><a class="nav-link" href="#">Web</a></li>
-                <li><a class="nav-link" href="#">Mobile</a></li>
-                <li><a class="nav-link" href="#">Design</a></li>
-                <li><a class="nav-link" href="#">Culture</a></li>
-                <li><a class="nav-link" href="#">Basics</a></li>
+                <li><a class="nav-link clickable" href="#">Web</a></li>
+                <li><a class="nav-link clickable" href="#">Mobile</a></li>
+                <li><a class="nav-link clickable" href="#">Design</a></li>
+                <li><a class="nav-link clickable" href="#">Culture</a></li>
+                <li><a class="nav-link clickable" href="#">Basics</a></li>
             </ul>
             <div class="search-container">
                 <div class="search-box">
@@ -42,11 +42,11 @@
                     </div>
                 </div>
                 <ul>
-                    <li><a class="nav-link" href="#">Web</a></li>
-                    <li><a class="nav-link" href="#">Mobile</a></li>
-                    <li><a class="nav-link" href="#">Design</a></li>
-                    <li><a class="nav-link" href="#">Culture</a></li>
-                    <li><a class="nav-link" href="#">Basics</a></li>
+                    <li><a class="nav-link clickable" href="#">Web</a></li>
+                    <li><a class="nav-link clickable" href="#">Mobile</a></li>
+                    <li><a class="nav-link clickable" href="#">Design</a></li>
+                    <li><a class="nav-link clickable" href="#">Culture</a></li>
+                    <li><a class="nav-link clickable" href="#">Basics</a></li>
                 </ul>
             </div>
         </nav>
@@ -69,9 +69,11 @@
                 <div class="author-img"></div>
                 <div class="author-col">
                     <p>Author</p>
-                    <h3>Dean Foster</h3>
+                    <a href="#">
+                        <h3 class="clickable">Dean Foster</h3>
+                    </a>
                 </div>
-                <img src="Images/heart.png">
+                <img class="small-icon" src="Images/heart.png">
             </div>
             <!-- Article content -->
             <div class="content">
@@ -97,7 +99,7 @@
                 <p class="body-dark">Molestie ac feugiat sed lectus vestibulum. Duis convallis convallis tellus id
                     interdum velit laoreet. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Vitae
                     sapien pellentesque habitant morbi tristique. Purus semper eget duis at tellus. Ut tellus elementum
-                    sagittis vitae et leo duis ut. In nibh mauris cursus mattis molestie a iaculis. Pellentesque
+                    sagittis vitae et leo duis ut. <a href="#">In nibh mauris </a>cursus mattis molestie a iaculis. Pellentesque
                     dignissim enim sit amet. Vitae tortor condimentum lacinia quis vel. Mi quis hendrerit dolor magna.
                     Tellus in metus vulputate eu scelerisque. Vitae auctor eu augue ut lectus arcu bibendum. Eget
                     egestas purus viverra accumsan in nisl nisi. Lorem ipsum dolor sit amet consectetur adipiscing.
@@ -140,7 +142,7 @@
                     integer feugiat scelerisque.</p>
                 <p class="body-dark">Consequat mauris nunc congue nisi. Tortor condimentum lacinia quis vel eros donec.
                     Sed augue lacus viverra vitae congue eu. Nunc lobortis mattis aliquam faucibus purus in massa.
-                    Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Turpis egestas
+                    Condimentum <a href="#"> vitae</a> sapien pellentesque habitant morbi tristique senectus et netus. Turpis egestas
                     maecenas pharetra convallis posuere morbi leo. Urna cursus eget nunc scelerisque. Lacus vestibulum
                     sed arcu non. Non sodales neque sodales ut etiam sit amet nisl. Netus et malesuada fames ac.
                     Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Elementum integer enim neque
@@ -182,7 +184,7 @@
                     Sed augue lacus viverra vitae congue eu. Nunc lobortis mattis aliquam faucibus purus in massa.
                     Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Turpis egestas
                     maecenas pharetra convallis posuere morbi leo. Urna cursus eget nunc scelerisque. Lacus vestibulum
-                    sed arcu non. Non sodales neque sodales ut etiam sit amet nisl. Netus et malesuada fames ac.
+                    sed arcu non. <a href="">Non sodales neque</a> sodales ut etiam sit amet nisl. Netus et malesuada fames ac.
                     Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Elementum integer enim neque
                     volutpat ac. Dolor sed viverra ipsum nunc. Velit egestas dui id ornare. Tempor id eu nisl nunc mi.
                     Semper risus in hendrerit gravida. Morbi non arcu risus quis.</p>
@@ -251,32 +253,45 @@
                     purus. Morbi tempus iaculis urna id. Urna id volutpat lacus laoreet non curabitur gravida arcu ac.
                     Sit amet dictum sit amet justo donec enim diam vulputate.</p>
             </div>
+            <!-- Author summary -->
             <div class="separator"></div>
             <div class="tag-container">
-                <div class="tag">
-                    <p>Basics</p>
-                </div>
-                <div class="tag">
-                    <p>Recent</p>
-                </div>
+                <a href="#">
+                    <div class="tag">
+                        <p>Basics</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="tag">
+                        <p>Recent</p>
+                    </div>
+                </a>
             </div>
             <div class="author-summary">
                 <!-- why isn't third figure margins collapsing on heading -->
+
             </div>
         </article>
+        <!-- Article aside -->
         <aside>
             <section>
                 <h3 class="subheading-3">Previous Article</h3>
                 <a href="#">
                     <div class="aside-article-link">
-                        <img class="aside-img" src="Images/earth.jpg">
-                        <p class="aside-article-title">Going Mobile: How Your Phone Network Actually Works</p>
+                        <img class="aside-img" src="Images/iphone.jpg">
+                        <p class="aside-article-title">Multithreading with Swift's Grand Central Dispatch</p>
                     </div>
                 </a>
             </section>
             <section>
                 <h3 class="subheading-3" id="further-h3">Further Reading</h3>
                 <div class="article-list">
+                    <a href="#">
+                        <div class="aside-article-link">
+                            <img class="aside-img" src="Images/earth.jpg">
+                            <p class="aside-article-title">Going Mobile: How Your Phone Network Actually Works</p>
+                        </div>
+                    </a>
                     <a href="#">
                         <div class="aside-article-link">
                             <img class="aside-img" src="Images/yoga.jpg">
@@ -298,8 +313,11 @@
                 </div>
             </section>
         </aside>
-
     </main>
+    <!-- Site footer -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
