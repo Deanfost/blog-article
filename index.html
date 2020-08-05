@@ -16,10 +16,10 @@
     <!-- Nav bar and article jumbotron -->
     <header>
         <nav class="container">
-            <div class="logo-container">
+            <a class="logo-container" href="#">
                 <img src="Images/logo.png">
                 <p class="site-title">DashBlog</p>
-            </div>
+            </a>
             <ul>
                 <li><a class="nav-link clickable" href="#">Web</a></li>
                 <li><a class="nav-link clickable" href="#">Mobile</a></li>
@@ -56,7 +56,7 @@
                     <h1 class="heading">Memory Management: Garbage Collection vs. Reference Counting</h1>
                     <p class="roboto-copy-white">July 26, 2020 · 8 min read</p>
                 </div>
-                <p class="roboto-copy-white">Tags: BASICS | RECENT</p>
+                <p class="roboto-copy-white">Tags: <a href="#">BASICS</a> | <a href="#">RECENT</a></p>
             </div>
         </section>
     </header>
@@ -65,8 +65,8 @@
     <main class="container content-layout">
         <article>
             <!-- Author bar -->
-            <div class="author-container">
-                <div class="author-img"></div>
+            <div class="author-header">
+                <img class="author-img" src="Images/headshot.jpg">
                 <div class="author-col">
                     <p>Author</p>
                     <a href="#">
@@ -99,7 +99,8 @@
                 <p class="body-dark">Molestie ac feugiat sed lectus vestibulum. Duis convallis convallis tellus id
                     interdum velit laoreet. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Vitae
                     sapien pellentesque habitant morbi tristique. Purus semper eget duis at tellus. Ut tellus elementum
-                    sagittis vitae et leo duis ut. <a href="#">In nibh mauris </a>cursus mattis molestie a iaculis. Pellentesque
+                    sagittis vitae et leo duis ut. <a href="#">In nibh mauris </a>cursus mattis molestie a iaculis.
+                    Pellentesque
                     dignissim enim sit amet. Vitae tortor condimentum lacinia quis vel. Mi quis hendrerit dolor magna.
                     Tellus in metus vulputate eu scelerisque. Vitae auctor eu augue ut lectus arcu bibendum. Eget
                     egestas purus viverra accumsan in nisl nisi. Lorem ipsum dolor sit amet consectetur adipiscing.
@@ -142,7 +143,8 @@
                     integer feugiat scelerisque.</p>
                 <p class="body-dark">Consequat mauris nunc congue nisi. Tortor condimentum lacinia quis vel eros donec.
                     Sed augue lacus viverra vitae congue eu. Nunc lobortis mattis aliquam faucibus purus in massa.
-                    Condimentum <a href="#"> vitae</a> sapien pellentesque habitant morbi tristique senectus et netus. Turpis egestas
+                    Condimentum <a href="#"> vitae</a> sapien pellentesque habitant morbi tristique senectus et netus.
+                    Turpis egestas
                     maecenas pharetra convallis posuere morbi leo. Urna cursus eget nunc scelerisque. Lacus vestibulum
                     sed arcu non. Non sodales neque sodales ut etiam sit amet nisl. Netus et malesuada fames ac.
                     Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Elementum integer enim neque
@@ -184,7 +186,8 @@
                     Sed augue lacus viverra vitae congue eu. Nunc lobortis mattis aliquam faucibus purus in massa.
                     Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Turpis egestas
                     maecenas pharetra convallis posuere morbi leo. Urna cursus eget nunc scelerisque. Lacus vestibulum
-                    sed arcu non. <a href="">Non sodales neque</a> sodales ut etiam sit amet nisl. Netus et malesuada fames ac.
+                    sed arcu non. <a href="">Non sodales neque</a> sodales ut etiam sit amet nisl. Netus et malesuada
+                    fames ac.
                     Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Elementum integer enim neque
                     volutpat ac. Dolor sed viverra ipsum nunc. Velit egestas dui id ornare. Tempor id eu nisl nunc mi.
                     Semper risus in hendrerit gravida. Morbi non arcu risus quis.</p>
@@ -256,20 +259,18 @@
             <!-- Author summary -->
             <div class="separator"></div>
             <div class="tag-container">
-                <a href="#">
-                    <div class="tag">
-                        <p>Basics</p>
-                    </div>
+                <a href="#" class="tag">
+                    <p>Basics</p>
                 </a>
-                <a href="#">
-                    <div class="tag">
-                        <p>Recent</p>
-                    </div>
+                <a href="#" class="tag">
+                    <p>Recent</p>
                 </a>
             </div>
             <div class="author-summary">
                 <!-- why isn't third figure margins collapsing on heading -->
                 <!-- Create text classes for every uniquely styled element -->
+                <!-- Fix padding on socials images -->
+                <!-- Reduce content sizes for smaller breakpoints (600px) -->
                 <div class="social-bar">
                     <p>Share on:</p>
                     <a href="#"><img class="small-icon" src="Images/facebook.png"></a>
@@ -280,8 +281,21 @@
                 <div class="social-bar-heart">
                     <img class="small-icon" src="Images/heart.png">
                 </div>
-                <div class="author-img"></div>
-
+                <div class="author-panel">
+                    <img class="author-img" src="Images/headshot.jpg">
+                    <div class="bio-container">
+                        <a href="#">
+                            <h2 class="subheading-1 clickable">Dean Foster</h2>
+                        </a>
+                        <p class="roboto-copy-grey">Dean Foster is an undergraduate CS student at the University of
+                            Maryland, College Park. He has personal and volunteer experience in Mobile Application
+                            Development, and is currently making the transition into Web Development, with an emphasis
+                            in Backend. A design enthusiast with a passion for making, he’s excited to help build 
+                            tomorrow’s solutions for today’s most pressing problems.
+                            <br><br><a href="#">Github</a><span> </span><a href="#">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </article>
         <!-- Article aside -->
@@ -314,12 +328,6 @@
                         <div class="aside-article-link">
                             <img class="aside-img" src="Images/skyline.jpg">
                             <p class="aside-article-title">The Culture Shift Taking Place in Tech-Hubs Nationwide</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="aside-article-link">
-                            <img class="aside-img" src="Images/IT.jpg">
-                            <p class="aside-article-title">Scrum Masters and their Role Within an Agile Workflow</p>
                         </div>
                     </a>
                 </div>

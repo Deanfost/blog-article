@@ -68,10 +68,11 @@
 .subheading-1 {
     font-family: var(--unnamed-font-family-roboto);
     font-weight: var(--font-weight-bold);
-    font-size: var(--unnamed-font-size-32);
+    font-size: var(--unnamed-font-size-30);
     line-height: var(--unnamed-line-spacing-43);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--grey-dark);
+    display: inline-block;
 }
 
 .subheading-2 {

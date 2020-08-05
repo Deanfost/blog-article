@@ -62,6 +62,7 @@ nav li {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    z-index: 10;
 }
 
 .logo-container img {
@@ -179,6 +180,10 @@ section.container {
     text-align: center;
 }
 
+.jumbotron a:visited {
+    color: white;
+}
+
 @media screen and (max-width: 900px) {
     .title-container {
         padding: 0 15px;
@@ -199,22 +204,19 @@ article {
     margin-bottom: 25px;
 }
 
-.author-container {
-    margin-bottom: 25px;
+.author-header {
+    margin-bottom: 20px;
 }
 
-.author-container .author-img {
+.author-header .author-img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
-    background-image: url('../Images/headshot.jpg');
-    background-position: top;
-    background-size: cover;
     border-radius: 50%;
     display: inline-block;
 }
 
-.author-container .author-col {
+.author-header .author-col {
     height: 50px;
     display: inline-flex;
     flex-direction: column;
@@ -245,7 +247,7 @@ article {
     cursor: pointer;
 }
 
-.author-container img {
+.author-header img.small-icon {
     float: right;
 }
 
@@ -330,6 +332,7 @@ figure img {
     display: inline-flex;
     align-items: center;
     width: 90%;
+    margin-bottom: 25px;
 }
 
 .social-bar p {
@@ -351,14 +354,28 @@ figure img {
     float: right;
 }
 
-.author-summary .author-img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    background-position: top;
-    background-image: url('../Images/headshot.jpg');
-    background-size: cover;
+.author-panel .author-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
     border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.bio-container {
+    flex-shrink: 1;
+}
+
+.author-panel {
+    display: flex;
+}
+
+.bio-container p a {
+    text-decoration: underline;
+}
+
+.bio-container p a:visited {
+    color: var(--gray-light);
 }
 
 /* Aside */
@@ -380,8 +397,10 @@ aside section > div {
 
 .aside-img {
     width: 100%;
+    height: 130px;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 #further-h3 {
