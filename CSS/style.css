@@ -484,6 +484,8 @@ footer {
     display: inline-block;
     margin-right: 50px;
     vertical-align: top;
+    height: 174px;
+    position: relative;
 }
 
 .footer-block a {
@@ -499,7 +501,7 @@ footer .container .roboto-copy-footer:not(:last-child) {
 }
 
 .subscribe-box {
-    width: 320px;
+    width: 340px;
     height: 36px;
     background-color: white;
     border-radius: 50px;
@@ -528,5 +530,13 @@ footer .container .roboto-copy-footer:not(:last-child) {
 
 .subscribe-box input[type="submit"]:hover {
     background-color: var(--accent-orange-dark);
+}
+
+.info-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
