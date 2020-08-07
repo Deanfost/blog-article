@@ -27,19 +27,15 @@
                 <li><a class="nav-link clickable" href="#">Culture</a></li>
                 <li><a class="nav-link clickable" href="#">Basics</a></li>
             </ul>
-            <div class="search-container">
-                <div class="search-box">
-                    <img src="Images/search.png">
-                    <input class="search" type="text" placeholder="Search articles">
-                </div>
-            </div>
+            <form class="search-box">
+                <img src="Images/search.png">
+                <input class="input-text" type="text" placeholder="Search articles" name="query">
+            </form>
             <img class="nav-menu" src="Images/menu.png">
             <div class="mobile-nav">
-                <div class="search-container">
-                    <div class="search-box">
-                        <img src="Images/search.png">
-                        <input class="search" type="text" placeholder="Search articles">
-                    </div>
+                <div class="search-box">
+                    <img src="Images/search.png">
+                    <input class="input-text" type="text" placeholder="Search articles" name="query">
                 </div>
                 <ul>
                     <li><a class="nav-link clickable" href="#">Web</a></li>
@@ -268,8 +264,8 @@
             </div>
             <div class="author-summary">
                 <!-- Create text classes for every uniquely styled element -->
-                <!-- Fix padding on socials images -->
                 <!-- Reduce content sizes for smaller breakpoints (600px) -->
+                <!-- Fix blue link issue on git pages (also on localhost:5500) -->
                 <div class="social-bar">
                     <p>Share on:</p>
                     <a href="#"><img class="small-icon" src="Images/facebook.png"></a>
@@ -289,9 +285,10 @@
                         <p class="roboto-copy-grey">Dean Foster is an undergraduate CS student at the University of
                             Maryland, College Park. He has personal and volunteer experience in Mobile Application
                             Development, and is currently making the transition into Web Development, with an emphasis
-                            in Backend. A design enthusiast with a passion for making, he’s excited to help build 
+                            in Backend. A design enthusiast with a passion for making, he’s excited to help build
                             tomorrow’s solutions for today’s most pressing problems.
-                            <br><br><a href="#">Github</a><span> </span><a href="#">LinkedIn</a>
+                            <br><br><a href="https://github.com/Deanfost">Github</a><span> </span><a
+                                href="https://www.linkedin.com/in/dean-foster/">LinkedIn</a>
                         </p>
                     </div>
                 </div>
@@ -329,7 +326,36 @@
     </main>
     <!-- Site footer -->
     <footer>
-
+        <div class="container">
+            <div class="footer-block">
+                <h2 class="subheading-2-footer">Explore</h2>
+                <a class="roboto-copy-footer" href="#">Web</a>
+                <a class="roboto-copy-footer" href="#">Mobile</a>
+                <a class="roboto-copy-footer" href="#">Design</a>
+                <a class="roboto-copy-footer" href="#">Culture</a>
+                <a class="roboto-copy-footer" href="#">Basics</a>
+            </div>
+            <div class="footer-block">
+                <h2 class="subheading-2-footer">Socials</h2>
+                <a class="roboto-copy-footer" href="#">Twitter</a>
+                <a class="roboto-copy-footer" href="#">Instagram</a>
+                <a class="roboto-copy-footer" href="#">Github</a>
+                <a class="roboto-copy-footer" href="#">Dribbble</a>
+            </div>
+            <div class="footer-block">
+                <h2 class="subheading-2-footer">Links</h2>
+                <a class="roboto-copy-footer" href="#">Home</a>
+                <a class="roboto-copy-footer" href="#">About us</a>
+                <a class="roboto-copy-footer" href="#">Become a Writer</a>
+            </div>
+            <div class="footer-block">
+                <h2 class="subheading-2-footer">Stay in the know</h2>
+                <form class="subscribe-box">
+                    <input class="input-text" type="text" placeholder="Your Email Address" name="email">
+                    <input type="submit" value="">
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 

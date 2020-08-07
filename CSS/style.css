@@ -71,13 +71,6 @@ nav li {
     margin-right: 18px;
 }
 
-.search-container {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 .search-box {
     width: 220px;
     height: 36px;
@@ -349,6 +342,10 @@ figure img {
     margin-right: 10px;
 }
 
+.social-bar a {
+    height: var(--small-icon-dimens);
+}
+
 .social-bar-heart {
     float: right;
     width: 10%;
@@ -476,4 +473,60 @@ aside section:first-child {
     }
 }
 
+/* Footer */
+
+footer {
+    background-color: var(--grey-dark);
+    padding: 40px 0;
+}
+
+.footer-block {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
+}
+
+.footer-block a {
+    display: block;
+}
+
+footer .container .footer-block:last-child {
+    float: right;
+}
+
+footer .container .roboto-copy-footer:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.subscribe-box {
+    width: 320px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.subscribe-box input[type="text"] {
+    width: 75%;
+    height: 36px;
+    padding-left: 15px;
+}
+
+.subscribe-box input[type="submit"] {
+    width: 25%;
+    height: 36px;
+    border: none;
+    background-color: var(--accent-orange);
+    background-image: url('../Images/mail.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.subscribe-box input[type="submit"]:hover {
+    background-color: var(--accent-orange-dark);
+}
 
