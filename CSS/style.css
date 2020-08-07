@@ -201,7 +201,6 @@ section.container {
 
 article {
     width: 70%;
-    margin-bottom: 25px;
 }
 
 .author-header {
@@ -275,6 +274,11 @@ figure img {
 
 #gc-roots-figure, #arc-figure {
     width: 70%;
+}
+
+.content figure + h2, .content figure + h3, 
+.content figure + p {
+    margin-top: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -386,13 +390,17 @@ aside {
     width: 25%;
 }
 
-aside section > div {
+aside section .article-list {
     display: flex;
     flex-direction: column;
 }
 
-.aside-article-link {
-    margin-bottom: 25px;
+aside section:first-child {
+    margin-bottom: 15px;
+}
+
+.article-list .aside-article-link:not(:last-child) { 
+    margin-bottom: 20px;
 }
 
 .aside-img {
@@ -408,20 +416,47 @@ aside section > div {
 }
 
 @media screen and (max-width: 900px) {
-    .aside-article-link {
-        width: 180px;
-        margin-right: 25px;
-        margin-bottom: 25px;
+    aside {
+        margin-bottom: 50px;
     }
 
-    aside section > div {
+    .aside-article-link {
+        width: 180px;
+    }
+
+    aside section h3 {
+        text-align: center;
+    }
+
+    aside section .article-list {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .article-list .aside-article-link:not(:last-child) { 
+        margin-bottom: 0;
+        margin-right: 20px;
     }
 
     #further-h3 {
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    aside section .article-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-list .aside-article-link:not(:last-child) { 
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .aside-article-link {
+        text-align: center;
     }
 }
 
