@@ -296,15 +296,18 @@ figure img {
 }
 
 .tag {
-    min-width: 125px;
+    min-width: 110px;
     padding: 5px;
-    margin-right: 15px;
     margin-bottom: 15px;
     background-color: var(--dark-white-bg);
     border-radius: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.tag-container .tag:not(:last-child) {
+    margin-right: 15px;
 }
 
 .tag p {
@@ -513,6 +516,7 @@ footer .container .roboto-copy-footer:not(:last-child) {
     width: 25%;
     height: 36px;
     border: none;
+    border-color: white;
     background-color: var(--accent-orange);
     background-image: url('../Images/mail.png');
     background-size: 25px;
@@ -540,11 +544,18 @@ footer .container .roboto-copy-footer:not(:last-child) {
         justify-content: center;
         margin-bottom: 20px;
     }
+
     .footer-sub-block {
         float: none;
-        width: fit-content;
-        height: 120px;
+        width: 100%;
+        height: 125px;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .subscribe-box {
+        width: 95%;
+        max-width: 320px;
+        margin: 0 auto;
     }
 }
