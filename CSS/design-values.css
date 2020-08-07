@@ -14,24 +14,24 @@
     --font-weight-semi-bold: 600;
     --unnamed-font-family-roboto: Roboto;
     --unnamed-font-family-open-sans: Open Sans;
-    --unnamed-font-size-18: 12.5px;
-    --unnamed-font-size-20: 14px;
-    --unnamed-font-size-22: 15.5px;
-    --unnamed-font-size-24: 17px;
-    --unnamed-font-size-26: 18.5px;
-    --unnamed-font-size-30: 21.5px;
-    --unnamed-font-size-32: 23px;
-    --unnamed-font-size-36: 26px;
+    --unnamed-font-size-18: 12px;
+    --unnamed-font-size-20: 13.5px;
+    --unnamed-font-size-22: 15px;
+    --unnamed-font-size-24: 16.5px;
+    --unnamed-font-size-26: 18px;
+    --unnamed-font-size-30: 21px;
+    --unnamed-font-size-32: 22.5px;
+    --unnamed-font-size-36: 25.5px;
     --unnamed-character-spacing-0: 0px;
-    --unnamed-line-spacing-24: 17px;
-    --unnamed-line-spacing-26: 18.5px;
-    --unnamed-line-spacing-27: 19.25px;
-    --unnamed-line-spacing-29: 20.75px;
-    --unnamed-line-spacing-32: 23px;
-    --unnamed-line-spacing-34: 24.5px;
-    --unnamed-line-spacing-36: 26px;
-    --unnamed-line-spacing-43: 31.25px;
-    --unnamed-line-spacing-48: 35px;
+    --unnamed-line-spacing-24: 16.5px;
+    --unnamed-line-spacing-26: 18px;
+    --unnamed-line-spacing-27: 18.75px;
+    --unnamed-line-spacing-29: 20.25px;
+    --unnamed-line-spacing-32: 22.5px;
+    --unnamed-line-spacing-34: 24px;
+    --unnamed-line-spacing-36: 25.5px;
+    --unnamed-line-spacing-43: 30.75px;
+    --unnamed-line-spacing-48: 34.5px;
 }
 
 /* Character Styles */
