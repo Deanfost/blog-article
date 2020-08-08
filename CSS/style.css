@@ -158,7 +158,7 @@ section.container {
     margin-bottom: 10px;
 }
 
-.jumbotron>p {
+.jumbotron > p {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -166,9 +166,13 @@ section.container {
     text-align: center;
 }
 
-.jumbotron a:visited {
+.jumbotron a {
     color: white;
 }
+
+/* .jumbotron a:visited {
+    color: white;
+} */
 
 @media screen and (max-width: 900px) {
     section.container {
@@ -355,11 +359,12 @@ figure img {
 
 .bio-container p a {
     text-decoration: underline;
-}
-
-.bio-container p a:visited {
     color: var(--gray-light);
 }
+
+/* .bio-container p a:visited {
+    color: var(--gray-light);
+} */
 
 /* Aside */
 
