@@ -171,6 +171,16 @@ section.container {
 }
 
 @media screen and (max-width: 900px) {
+    section.container {
+        background-image: url('../Images/article-image.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .jumbotron {
+        background-image: none;
+    }
+
     .title-container {
         padding: 0 15px;
     }
