@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <!-- Up arrow -->
+    <img src="Images/up.png" id="up-arrow">
     <!-- Nav bar -->
     <header>
         <nav class="container">
@@ -32,12 +34,12 @@
                 <img src="Images/search.png">
                 <input class="input-text" type="text" placeholder="Search articles" name="query">
             </form>
-            <img class="nav-menu" src="Images/menu.png">
-            <div class="mobile-nav">
-                <div class="search-box">
+            <img class="nav-menu" src="Images/menu.png" id="mobile-nav-btn">
+            <div class="mobile-nav" id="mobile-nav">
+                <form class="search-box">
                     <img src="Images/search.png">
                     <input class="input-text" type="text" placeholder="Search articles" name="query">
-                </div>
+                </form>
                 <ul>
                     <li><a class="nav-link clickable" href="#">Web</a></li>
                     <li><a class="nav-link clickable" href="#">Mobile</a></li>
@@ -265,9 +267,6 @@
                 </a>
             </div>
             <div class="author-summary">
-                <!-- Reduce content sizes for smaller breakpoints (600px) -->
-                <!-- Fix blue link issue on git pages (also on localhost:5500) -->
-                <!-- Fix mobile nav -->
                 <div class="social-bar">
                     <p class="roboto-caption">Share on:</p>
                     <a href="#"><img class="small-icon" src="Images/facebook.png"></a>
@@ -327,7 +326,7 @@
         </aside>
     </main>
     <!-- Site footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer-block-list">
                 <div class="footer-block">
@@ -366,6 +365,7 @@
             </div>
         </div>
     </footer>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
